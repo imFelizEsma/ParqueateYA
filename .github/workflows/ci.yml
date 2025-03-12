@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '8.0.x' 
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore BackEnd
 
     - name: Build project
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build BackEnd --no-restore --configuration Release
       
     # - name: Run tests
     #   run: dotnet test --no-build --configuration Release --logger trx
