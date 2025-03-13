@@ -8,6 +8,8 @@ namespace Sistema_Gestion_Tickets.Data
         public SAEContext(DbContextOptions<SAEContext> options) : base(options) { }
 
         public DbSet<Ticket> Ticket { get; set; }
+        public DbSet<Administrador> Administrador { get; set; }
+        public DbSet<Estacionamiento> Estacionamiento { get; set; }
 
     }
 }

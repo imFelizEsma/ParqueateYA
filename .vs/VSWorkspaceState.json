@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows"
+    "\\.github\\workflows",
+    "\\BackEnd"
   ],
-  "SelectedNode": "\\NewFolder",
+  "SelectedNode": "\\BackEnd\\Sistema_Gestion_Tickets.sln",
   "PreviewInSolutionExplorer": false
 }

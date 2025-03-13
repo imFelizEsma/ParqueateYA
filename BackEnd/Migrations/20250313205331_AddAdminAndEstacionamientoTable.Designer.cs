@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_Gestion_Tickets.Data;
 
@@ -11,9 +12,11 @@ using Sistema_Gestion_Tickets.Data;
 namespace Sistema_Gestion_Tickets.Migrations
 {
     [DbContext(typeof(SAEContext))]
-    partial class SAEContextModelSnapshot : ModelSnapshot
+    [Migration("20250313205331_AddAdminAndEstacionamientoTable")]
+    partial class AddAdminAndEstacionamientoTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
