@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\.github",
-    "\\.github\\workflows",
-    "\\BackEnd"
+    ""
   ],
-  "SelectedNode": "\\BackEnd\\appsettings.json",
+  "SelectedNode": "\\Sistema_Gestion_Tickets.sln",
   "PreviewInSolutionExplorer": false
 }
