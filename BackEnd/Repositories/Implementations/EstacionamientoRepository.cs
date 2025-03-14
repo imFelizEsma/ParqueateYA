@@ -22,7 +22,7 @@ namespace Sistema_Gestion_Tickets.Repositories.Implementations
         public async Task<Estacionamiento> ObtenerPorTipoVehiculo(TipoVehiculo tipoVehiculo)
         {
             return await _context.Estacionamiento
-                .FirstOrDefaultAsync(e => e.TipoVehiculo == tipoVehiculo);
+				.FirstOrDefaultAsync(e => e.TipoVehiculo == tipoVehiculo);
         }
 
         public async Task Actualizar(Estacionamiento estacionamiento)

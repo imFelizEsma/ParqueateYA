@@ -1,4 +1,5 @@
-﻿using Sistema_Gestion_Tickets.Models;
+﻿using Sistema_Gestion_Tickets.DTOs;
+using Sistema_Gestion_Tickets.Models;
 
 namespace Sistema_Gestion_Tickets.Repositories.Interfaces
 {
@@ -10,5 +11,6 @@ namespace Sistema_Gestion_Tickets.Repositories.Interfaces
         Task Crear(Ticket ticket);
         Task Actualizar(Ticket ticket);
         Task Eliminar(Ticket ticket);
-    }
+		
+	}
 }
