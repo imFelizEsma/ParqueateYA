@@ -27,29 +27,29 @@ jobs:
     - name: Build project
       run: dotnet build BackEnd --no-restore --configuration Release
       
-    # - name: Run tests
-    #   run: dotnet test --no-build --configuration Release --logger trx
+    #- name: Run tests
+    #  run: dotnet test --no-build --configuration Release --logger trx
 
-    # - name: Upload test results
-    #   uses: actions/upload-artifact@v4.6.1
-    #   with:
-    #     name: TestResults
-    #     path: '**/*.trx'
+    #- name: Upload test results
+    #  uses: actions/upload-artifact@v4.6.1
+    #  with:
+    #    name: TestResults
+    #    path: '**/*.trx'
 
-  # lint-html:
-  #   runs-on: ubuntu-latest
-
-  #   steps:
-  #   - name: Checkout code
-  #     uses: actions/checkout@v4.2.2
-
-  #   - name: Setup Node.js
-  #     uses: actions/setup-node@v4.2.0
-  #     with:
-  #       node-version: '20'
-
-  #   - name: Install htmlhint
-  #     run: npm install -g htmlhint
-
-  #   - name: Run htmlhint
-  #     run: htmlhint "**/*.html"
+  lint-html:
+      runs-on: ubuntu-latest
+  
+      steps:
+       - name: Checkout code
+         uses: actions/checkout@v4.2.2
+    
+       - name: Setup Node.js
+         uses: actions/setup-node@v4.2.0
+         with:
+            node-version: '20'
+    
+       - name: Install htmlhint
+         run: npm install -g htmlhint
+    
+       - name: Run htmlhint
+         run: htmlhint "**/*.html"
