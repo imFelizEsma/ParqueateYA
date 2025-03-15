@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_Gestion_Tickets", "Sistema_Gestion_Tickets.csproj", "{5409FDE2-D803-4ACF-8EAF-6A77EC833728}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sistema_Gestion_Tickets", "Sistema_Gestion_Tickets.csproj", "{5409FDE2-D803-4ACF-8EAF-6A77EC833728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{ED6667E7-43A3-45AB-8768-3315E78A9364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParqueateYA.Ticket.Api", "..\ParqueateYA.Ticket.Api\ParqueateYA.Ticket.Api.csproj", "{9A8DE123-9C07-486F-931F-3791B11A17A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{5409FDE2-D803-4ACF-8EAF-6A77EC833728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5409FDE2-D803-4ACF-8EAF-6A77EC833728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5409FDE2-D803-4ACF-8EAF-6A77EC833728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A8DE123-9C07-486F-931F-3791B11A17A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8DE123-9C07-486F-931F-3791B11A17A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8DE123-9C07-486F-931F-3791B11A17A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8DE123-9C07-486F-931F-3791B11A17A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A8DE123-9C07-486F-931F-3791B11A17A5} = {ED6667E7-43A3-45AB-8768-3315E78A9364}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CC6A313-2746-4692-975F-E6DF19868EBA}

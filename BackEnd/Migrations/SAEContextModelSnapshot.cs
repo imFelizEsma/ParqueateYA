@@ -22,6 +22,49 @@ namespace Sistema_Gestion_Tickets.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Sistema_Gestion_Tickets.Models.Administrador", b =>
+                {
+                    b.Property<int>("IDAdministrador")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IDAdministrador"));
+
+                    b.Property<string>("Contrasena")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreUsuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IDAdministrador");
+
+                    b.ToTable("Administrador");
+                });
+
+            modelBuilder.Entity("Sistema_Gestion_Tickets.Models.Estacionamiento", b =>
+                {
+                    b.Property<int>("IDEstacionamiento")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IDEstacionamiento"));
+
+                    b.Property<int>("CapacidadTotal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Ocupados")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoVehiculo")
+                        .HasColumnType("int");
+
+                    b.HasKey("IDEstacionamiento");
+
+                    b.ToTable("Estacionamiento");
+                });
+
             modelBuilder.Entity("Sistema_Gestion_Tickets.Models.Ticket", b =>
                 {
                     b.Property<string>("Codigo")

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ParqueateYA.Ticket.Api.props" />
+</Project>
