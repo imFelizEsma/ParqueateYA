@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParqueateYA.Ticket.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+542abb61b3a68467ed781d585041b5eeb7028c3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc01fdfdb68905133d40e147db29534e7542294")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParqueateYA.Ticket.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParqueateYA.Ticket.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
